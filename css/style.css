@@ -21,7 +21,11 @@ a{
         margin: 0px;
         padding: 0px;
     }
-
+img{
+  display: block;  
+  max-width: 100%;
+  height: auto;
+}
 body{
     background-color:var(--bg-color);
      font-family: 'Roboto', sans-serif;
@@ -35,7 +39,16 @@ body{
    .nav{
     display: flex;
    }
-
+   .heder{
+    padding-top: 24px;
+    padding-bottom: 24px;
+   }
+.conteiner{
+    width: 1158px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
    
 button{
     cursor:pointer;
@@ -56,10 +69,7 @@ button{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 0;
+   
     margin-right: 76px; 
 
   }
@@ -92,9 +102,7 @@ button{
     color: var(--color-text-color);
 
 
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
   }
   .link-heder:hover,
   .link-heder:focus{
@@ -107,6 +115,7 @@ button{
     display: flex;
   }
   .adres{
+    margin-left:  auto;
 
 
     font-size: 16px;
@@ -116,21 +125,17 @@ button{
    font-style: normal;}
 
 .adres__item{
-    display: inline-block;
+  
 }
 .adres__meil{
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+ 
     margin-right: 40px;
-    margin-left: 332px;
+    
 
     color:var(--seconari-text-color);
 
 }
-.adres__tel{display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+.adres__tel{
 
     
     color: var(--seconari-text-color);
@@ -157,11 +162,15 @@ button{
     }
     .hero{
         background-color: var(--hero-and-footer-bg-color);
-    }
-    .hero-title { display: inline-block;
-        margin:  188px  466px 48px;
-        min-width: 496px;
+        padding-top: 188px;
+        padding-bottom: 188px;
         text-align: center;
+    }
+    .hero-title {
+      
+        max-width: 496px;
+       margin: auto;
+       margin-bottom: 48px;
       
          
         font-weight: 700;
@@ -169,12 +178,12 @@ button{
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: var(--hero-title-and-button-color);
-        text-align: center;
     }
     .button {
-        margin: 0px 635px 188px ;
+       text-align: center;
         padding: 16px 32px;
-        min-width: 176px; ;
+        max-width: 176px; ;
+       
        
 
         font-family: 'Roboto', sans-serif;
@@ -186,12 +195,12 @@ button{
         background: var(--portfolio-buuton-color);
         box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
         border: var(--buuton-color);
-       
+        border-radius: 4px;
     }
     .button:hover, .button:focus{
-        
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+        background-color: var(--portfolio-buuton-bg-hover-color);
+     
+
     }
     .visually-hidden {
         position: absolute;
@@ -207,7 +216,8 @@ border-radius: 4px;
         overflow: hidden;}
         .advantages {
             display: flex;
-            margin: 120px 156px;
+            padding-top: 120px;
+            padding-bottom: 120px;
            max-width: 1128px;
         }
         .advantages__item:not(:last-child){
@@ -236,8 +246,9 @@ border-radius: 4px;
             color: var(--seconari-text-color);
          
         }
-        .what { margin: 0px 156px 120px;
-            max-width: 1128px;
+        .what { 
+
+           padding-bottom: 237px;
         }
         .what__title {
             margin-bottom: 72px;
@@ -249,7 +260,6 @@ border-radius: 4px;
             line-height: 1.11;
             letter-spacing: 0.02em;
             color: var(--color-text-color);
-            text-align: center;
             text-transform: capitalize;
 
         }
@@ -264,21 +274,22 @@ border-radius: 4px;
         }
 
         .what__imeg {
-            border: 1px solid var(--footer-text-color);
-            background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
+            
         }
         .team {
             background-color: var(--setion-bg-color);
+            padding-top: 120px;
+            padding-bottom: 120px;
+
         }
         .team__title {
-            padding-top: 120px;
-            text-align: center;
+            margin-bottom: 72px;
+            
 
 
             font-weight: 700;
             font-size: 36px;
             line-height: 1.11;
-            text-align: center;
             text-align: center;
             text-transform: capitalize ;
             letter-spacing: 0.02em;
@@ -287,13 +298,14 @@ border-radius: 4px;
         }
         .team__list {
             display: flex;
-            margin: 72px 149px 0px;
-            padding-bottom: 120px;
 
              background-color: var(--setion-bg-color);
         }
         .team__item:not(:last-child){
             margin-right: 24px;
+        }
+        .team__item{
+            
         }
         .team__photo {
             display: block;
@@ -301,9 +313,9 @@ border-radius: 4px;
             background: url(man-with-laptop-presenting-something.jpg);
         }
         .team__sabtitle {
-            padding: 32px 64.9px 8px;
+           
             text-align: center;
-            background-color: var(--bg-color);
+           
 
             font-weight: 500;
             font-size: 20px;
@@ -312,10 +324,15 @@ border-radius: 4px;
             color: var(--color-text-color);
             
         }
-        .team__text {
-            padding: 0px 6.9px 32px;
-            text-align: center;
+        .stule_team{
+            padding-top: 32px;
+            padding-bottom: 32px;
             background-color: var(--bg-color);
+        }
+        .team__text {
+           margin-top: 8px;
+            text-align: center;
+            
 
             font-size: 16px;
             line-height: 1.5;
@@ -325,14 +342,15 @@ border-radius: 4px;
         }
         .footer {
             background-color: var(--hero-and-footer-bg-color);
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
         .footer-conteiner{
             background-color: var(--hero-and-footer-bg-color);
-            
-            display: inline-block;
-            margin:   100px 1020px 100px 156px;
-            max-width: 264px;
-            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 1158px; 
+           margin: auto;
 
         }
         .footer-logo {
@@ -343,12 +361,19 @@ border-radius: 4px;
             color: var(--portfolio-buuton-bg-color);
         }
         .footer-text {
+            width: 264px;
+            margin-top: 16px;
+
             font-size: 16px;
           line-height: 1.5;
           letter-spacing: 0.02em;
           color: var(--footer-text-color);
         }
 /* portfolio */
+.menu{
+    padding-top: 96px; 
+    padding-bottom: 120px;
+}
 .lists{
 
 }
@@ -364,7 +389,6 @@ border: 1px solid var(--footer-text-color);
 border-radius: 4px;
 }
 .lists__buuton:focus,
-
 .lists__buuton:hover{
     color: var(--bg-color);
     background-color: var(--portfolio-buuton-bg-hover-color);
@@ -385,15 +409,22 @@ letter-spacing: 0.02em;
 color:var(--color-text-color)
 }
 .portfolio__text {
+    
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--seconari-text-color);
-}
-/* portfolio */
+    }
+
+
+
 .lists{
-    display: flex;
-    margin: 96px 422px 72px;
+    flex-wrap: wrap;
+    margin-right: ;
+    margin-left: auto;
+    justify-content: center;
+   
     
     }
     .lists__item:not(:last-child){
@@ -405,12 +436,17 @@ color:var(--color-text-color)
     .porfolio{
         display: flex;
         flex-wrap: wrap;
+       margin-top: 72px;
+       
     }
     .portfolio__conteiner{
         margin: 0px 148px 120px;
         max-width: 1128px;}
           .porfolio__item:not(:nth-child(3n+3)){
         margin-right: 24px;
+        
+    }
+    .porfolio__item:not(:nth-last-child(-n + 3)){
         margin-bottom: 48px;
     }
     
@@ -420,6 +456,7 @@ color:var(--color-text-color)
     }
     .border{
         border: 1px solid var(--footer-text-color);
+        padding: 32px 16px;
     }
 .porfolio__photo {
     display: block;
@@ -427,7 +464,7 @@ color:var(--color-text-color)
     background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365.jpg);
 }
      .portfolio__title {
-    padding: 32px 52px 8px 16px;
+ 
     
 
 
@@ -439,7 +476,7 @@ letter-spacing: 0.02em;
 
 
 .portfolio__text {
-    padding: 0px 269px 32px 16px;
+   margin-top: 8px;
     text-align: left;
     display: inline-block;
 
